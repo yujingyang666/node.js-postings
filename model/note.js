@@ -54,7 +54,5 @@ Note.sync()
 //     console.log(notes)
 // })
 
-module.exports=Note;
-
-
-//sequelize.drop(Note)
+module.exports.Note=Note;
+module.exports.sequelize=sequelize;
