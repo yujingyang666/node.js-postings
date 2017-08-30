@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
 body {
     font-size:16px;
     background-image: url(/images/bg.jpg);
@@ -11,17 +14,19 @@ body {
     background-size:cover; 
     background-repeat: no-repeat;
     height: 100%;
-
 }
 
  
 
 section {
+    min-height: 100%;
     background: rgba(255, 255, 255, 0.5);
     width: 35em;
     margin: 0 auto;
     padding: 1em;
     color: white;
+    display: flex;
+    flex-direction: column;
     header {
         background: #FFF;
         color: #008B8B;
@@ -31,6 +36,7 @@ section {
         line-height: 2em;
     }
     main {
+        flex-grow: 1;
         #input {
             font-size: 0.9em;
             display: flex;
@@ -108,6 +114,15 @@ section {
                     }
                 }
             }
+        }
+    }
+    footer{
+        text-align: center;
+        a{
+            color: #FFF;
+            font-size: 0.9em;
+            text-decoration:none;
+
         }
     }
 }
