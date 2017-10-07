@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="./css/myresume.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
+    <script src="./echarts/echarts.min.js"></script>
+
+    <title>余靖阳的个人简历</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="layout">
+            <div class="header-box">
+                <div>
+                    <span class="name">余靖阳</span>
+                    <span class="job">前端开发工程师</span>
+                </div>
+                <div class="info">
+                    <span class="weixin"><i class="iconfont icon-weixin"></i>214308866</span>
+                    <span class="mail"><i class="iconfont icon-icon3"></i>yjy214308866@gmail.com</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="main-cbox per-info">
+            <div class="layout">
+                <div class="per-content">
+                    <div class="photo"><img src="./images/photo.jpg" alt=""></div>
+                    <div class="info">
+                        <p><i class="iconfont icon-geren"></i>余靖阳/男/1989</p>
+                        <p><i class="iconfont icon-gongzuo"></i>应聘职位：前端工程师</p>
+                        <p><i class="iconfont icon-xuexi3"></i>本科/东莞理工学院/电子系</p>
+                        <p><i class="iconfont icon-phone"></i>手机：15625575559</p>
+                        <p><i class="iconfont icon-qq1"></i>QQ/微信号：214308866</p>
+                        <p><i class="iconfont icon-icon3"></i>email：<a href="mailto:yjy214308866@gmail.com">yjy214308866@gmail.com</a>                            </p>
+                        <p><i class="iconfont icon-github"></i>Github：<a href="http://github.com/yujingyang666">github.com/yujingyang666</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-wbox skill">
+            <div class="layout">
+                <p class="title">技术栈</p>
+                <div class="skill-content">
+                    <div class="skill-info">
+                        <div class="skill-info-box">
+                            <div class="img-box">
+                                <img src="./png/JS.png" alt="">
+                            </div>
+                            <P><b>JS：</b>熟悉原生Javascript、jQuery/Zepto，能运用模块化、面向对象的方式编程，掌握DOM操作、XMLHttpRequest对象/ajax前后端交互。</P>
+                        </div>
+                        <div class="skill-info-box">
+                            <div class="img-box">
+                                <img src="./png/html5.png" alt="">
+                            </div>
+                            <P><b>HTML 5 & CSS 3：</b>熟悉HTML 5语义化标签的使用，能适当运用CSS 3、Bootstrap使页面在现代浏览器上效果更佳，高度还原设计稿提供的页面。掌握运用Sass、Less等CSS扩展语言。</P>
+                        </div>
+                        <div class="skill-info-box">
+                            <div class="img-box">
+                                <img src="./png/vue.png" alt="">
+                            </div>
+                            <P><b>Vue.js：</b>熟悉Vue.js的模板语法、生命周期、通信，了解Vue-cli + Vuex + Vue-router全家桶运用。</P>
+                        </div>
+                        <div class="skill-info-box">
+                            <div class="img-box">
+                                <img src="./png/react.png" alt="">
+                            </div>
+                            <P><b>React.js：</b>熟悉React.js的模板语法，掌握组件的生命周期和组件间通信。</P>
+                        </div>
+                        <div class="skill-info-box">
+                            <div class="img-box">
+                                <img src="./png/nodejs.png" alt="">
+                            </div>
+                            <P><b>Node.js：</b>掌握CommonJS规范，了解基于Express的Web开发，熟悉webpack、RequireJS等打包工具和gulp前端工作流的应用。</P>
+                        </div>
+                        <div class="skill-info-box">
+                            <div class="img-box">
+                                <img src="./png/PS.png" alt="">
+                            </div>
+                            <P><b>PS & AI：</b>能进行简单的图片处理、平面设计。</P>
+                        </div>
+                    </div>
+                    <div id="pie"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-cbox project">
+            <div class="layout">
+                <p class="title">个人作品</p>
+                <div class="project-content">
+                    <div class="info">
+                        <h3>基于react.js的在线备忘录webapp</h3>
+                        <div class="span-box">
+                            <span class="project-span js">ES6</span>
+                            <span class="project-span react">React</span>
+                            <span class="project-span html5">HTML 5</span>
+                            <span class="project-span CSS3">CSS 3</span>
+                            <span class="project-span leancloud">leancloud<span>
+                        </div>
+                        <p class="detail"><b>功能介绍：</b>一个可增删改的在线云便签，具备登录/注册功能，无需安装app应用，能在不同设备使用你的备忘录并同步到网络。
+                            <br><b>技术细节：</b>本应用使用了react前端框架和第三方云服务leancloud做后端支持，是本人独立完成的第一个web应用，没有使用rudex等状态管理工具，组件间使用props、states进行通信。通过该项目，清楚了解到状态管理的重要性。
+                        </p>
+                        <div class="link">
+                             <a href="https://github.com/yujingyang666/todolist-react-leancloud"><i class="iconfont icon-xiangmu"></i>项目地址</a>
+                             <a  href="https://yujingyang666.github.io/todolist-react-leancloud/build/index.html">
+                                <i class="iconfont icon-zaixian"></i>在线地址
+                                <div class="float-box"><img src="./images/todolist.png" alt=""></div>
+                            </a>
+                             
+                        </div>
+                    </div>
+                    <div class="picture"><img src="./images/2.jpg" alt=""></div>
+                </div>
+                <div class="project-content">
+                    <div class="info">
+                        <h3>基于Vue.js的在线简历编辑器</h3>
+                        <div class="span-box">
+                            <span class="project-span js">ES6</span>
+                            <span class="project-span vue">Vue</span>
+                            <span class="project-span vue">Vuex</span>
+                            <span class="project-span html5">HTML 5</span>
+                            <span class="project-span CSS3">Sass</span>
+                            <span class="project-span leancloud">leancloud<span>
+                        </div>
+                        <p class="detail"><b>功能介绍：</b>一个PC端在线简历编辑器，具备登录/注册/保存功能，无须生成文档，在线预览打印。
+                            <br><b>技术细节：</b>本页面应用使用了Vue-cli+Vue-router+Vuex全家桶实现前端页面，第三方云服务leancloud做后端支持，并使用SASS预编译CSS作为辅助。基于第一次web应用了解到状态管理的重要性后，本页面使用了Vuex状态管理。
+                        </p>
+                        <div class="link">
+                             <a href="https://github.com/yujingyang666/resume-editor"><i class="iconfont icon-xiangmu"></i>项目地址</a>
+                             <a href="https://yujingyang666.github.io/resume-editor/dist/index.html#/"><i class="iconfont icon-zaixian"></i>在线地址</a>
+                        </div>
+                    </div>
+                    <div class="picture"><img src="./images/1.jpg" alt=""></div>
+                </div>
+                <div class="project-content">
+                    <div class="info">
+                        <h3>基于Node.js-Express的在线留言板</h3>
+                        <div class="span-box">
+                            <span class="project-span js">jQuery</span>
+                            <span class="project-span nodejs">Node.js</span>
+                            <span class="project-span express">Express</span>
+                            <span class="project-span sequelize">Sequelize</span>
+                            <span class="project-span html5">HTML 5</span>
+                            <span class="project-span CSS3">Less</span>
+                        </div>
+                        <p class="detail"><b>功能介绍：</b>一个基于Express框架 + Sequelize数据库模块的简易在线留言板，能在PC/移动端中使用。
+                            <br><b>技术细节：</b>本页面是使用了基于node.js的Express框架做后台的在线留言板页面，目的是为了了解使用node.js做server端的工作原理。使用Sequelize模块自带的SQLite3做数据库。
+                        </p>
+                        <div class="link">
+                            <a href="/postings"><i class="iconfont icon-zaixian"></i>在线地址</a>
+                        </div>
+                    </div>
+                    <div class="picture"><img src="./images/3.jpg" alt=""></div>
+                </div>
+                <div class="project-content">
+                    <div class="info">
+                        <h3>一些页面和小组件</h3>
+                        <div class="span-box">
+                            <span class="project-span js">Javascript</span>
+                            <span class="project-span js">jQuery</span>
+                            <span class="project-span html5">HTML 5</span>
+                            <span class="project-span CSS3">CSS 3</span>
+                        </div>
+                        <p class="detail">一些静态页面布局和小组件，主要是一些学习前端的过程中所做的小demo，包含原生JS、jQuery、HTML 5&CSS 3、webpack打包、常见DOM操作和ajax的运用。</p>
+                         
+                        <div class="link links">
+                            <a href="https://yujingyang666.github.io/Mobile-web-demo/%E7%A7%BB%E5%8A%A8%E7%AB%AFdemo.html">
+                                <i class="iconfont icon-zaixian"></i>移动端商城首页静态页面
+                                <div class="float-box"><img src="./images/webdemo.png" alt=""></div>
+                            </a>
+                            <a href="https://yujingyang666.github.io/PC-static-webpage/index.html"><i class="iconfont icon-zaixian"></i>PC端静态页面</a>
+                            <span>
+                                <a href="https://github.com/yujingyang666/demo"><i class="iconfont icon-zaixian"></i>一些组件</a>
+                                <div class="float-box">
+                                    <a href="https://yujingyang666.github.io/demo/tab/tab.html">tab</a>
+                                    <a href="https://yujingyang666.github.io/demo/Carousel/Carousel.html">轮播</a>
+                                    <a href="https://yujingyang666.github.io/demo/goTop/goTop.html">回顶部</a>
+                                    <a href="https://yujingyang666.github.io/demo/bucket/bucket.html">木桶布局</a>
+                                    <a href="https://yujingyang666.github.io/demo/waterfall/waterfall-news.html">新闻瀑布流</a>
+                                    <a href="https://yujingyang666.github.io/demo/waterfall/waterfall-loadmore.html">加载更多</a>
+                                </div>
+                                
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="picture"><img src="./images/4.jpg" alt=""></div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="layout">
+            <div>
+                <div class="mobile">
+                    <img src="./images/2wei.png" alt="">
+                    <p>您还可以使用移动设备扫一扫左侧二维码打开本页</p>
+                </div>
+                <div class="msg">
+                    <p>个人简历&nbsp&nbsp&nbsp&nbsp <a href="http://www.miitbeian.gov.cn">粤ICP备&nbsp&nbsp17108699号</a></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="./js/skill.js"></script>
+</body>

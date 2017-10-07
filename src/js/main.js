@@ -2,7 +2,7 @@ var Notes = require('./getnotes')
 var FormatDateTime = require('./gettime')
 var toast = require('./toast')
 require('less/main.less')
-$.get('/notes').done(function (ret) {
+$.get('/postings/notes').done(function (ret) {
     $('#user').val(localStorage.nodejspostingsuser)
 
     Notes.render(ret)
@@ -21,7 +21,7 @@ $('#sub').on('click', function () {
         time: time
     }
     if (user.length != 0 && content.length !=0) {
-        $.post('/add', data).done(function (ret) {
+        $.post('/postings/add', data).done(function (ret) {
             Notes.render(ret)
             $('#content').val('')
             toast('发送成功')

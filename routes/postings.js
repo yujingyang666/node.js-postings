@@ -5,7 +5,7 @@ var Note = require('../model/note').Note
 /* GET home page. */
 router.get('/', function(req, res, next) {
   
-  res.render('index');
+  res.render('postings');
 });
 
 
